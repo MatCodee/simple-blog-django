@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{{blog.title}}</h2>
+<p>{{blog.description}}</p>
+<p>{{blog.created}}</p>
+<img src="{{blog.image.url}}" alt="">
+
+{% endblock content %}

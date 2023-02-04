@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+        <div class="blog-container">
+            {% for blog in blogs %}
+                <div class="card">
+                    <img src="{{blog.image.url}}" alt="">
+                    <div class="card-content">
+                        <h2>{{blog.title}}</h2>
+                        <p>{{blog.description}}</p> 
+                        <a href="detail/{{blog.id}}">Select</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+{% endblock content %}
